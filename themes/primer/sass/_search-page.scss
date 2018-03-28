@@ -1,0 +1,44 @@
+.search-results {
+     background: #9ca4ab;
+	#main {
+      & a {
+      	text-decoration: none;
+      	color: #000;
+      }
+
+      .post {
+      	border: 1px solid #000;
+      	text-align: center;
+      	width: 800px;
+      	margin: auto;
+
+      	&:nth-child(n+2) {
+      		margin-top: 50px;
+      	}
+
+      	.entry-summary {
+      		margin-bottom: 50px;
+      	}
+
+      	.attachment-post-thumbnail {
+      		width: 100%;
+      		position: relative;
+      		top: -3px;
+      	}
+      }
+		.byline {
+			text-transform: capitalize;
+		}
+		@include desktop {
+			width: 1024px;
+			margin: auto;
+			background: #fff;
+
+			& p {
+				width: 690px;
+				margin: auto;
+				text-align: left;
+			}
+		}//@desktop
+	}//.page
+}//.search-results

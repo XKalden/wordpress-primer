@@ -1,0 +1,181 @@
+.page-template-contact-form {
+
+    @include mobile {
+    	margin-top: 60px;
+    }
+
+	@include desktop {
+        background: #9ca4ab;
+	}
+	#main {
+		@include desktop {
+		 	background: #fff;
+			width: 1024px;
+			margin: auto;
+		}
+
+		.contact-form-hero {
+			margin-top: 32px;
+			height: 233px;
+
+	   color: #fff;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       
+       @include desktop {
+        padding-left: 55px;
+       }
+
+       @include tablet {
+        padding-left: 55px;
+       }
+       @include large {
+       	margin-top: 105px;
+       }
+     
+       & h1 {
+        margin: 0;
+        padding-top: 70px;
+        font-size: 45px;
+       }
+
+       & p {
+        font-size: 20px;
+       }
+
+       @include mobile {
+        height: 185px;
+        text-align: center;
+        margin-top: 105px;
+        & h1 {
+          font-size: 36px;
+
+        }
+
+        & p {
+          font-size: 14px;
+        }
+       }
+
+      	@include tablet {
+	      margin-top: 30px;
+			}
+		}
+		.contact-form-container {
+			text-align: center;
+			margin-top: 50px;
+			overflow: hidden;
+            
+			& h1 {
+				font-size: 36px;
+		    	font-family: 'Montserrat';
+     		}
+
+			@include mobile {
+				h1 {
+					font-size: 22px;
+				}
+			}
+
+			@include tablet {
+
+				h1 {
+			     font-size: 30px;
+
+			   }
+			}
+
+			.contact-form-wrapper {
+               margin: 20px auto 0 auto;
+
+               @include mobile {
+               	width: 282px;
+               }
+
+				@include desktop {
+				width: 380px;
+				margin: 50px auto 0 auto;
+				}
+
+				@include tablet {
+					width: 380px;
+				}
+
+				.wpcf7-textarea {
+					height: 130px;
+				}
+
+				.wpcf7-form-control {
+
+
+
+			}//.form-control
+
+			.wpcf7-text, .wpcf7-select {
+				height: 39px;
+				width: 100%;
+			}
+
+			
+			.wpcf7-form-control-wrap {
+				font-weight: bold;
+				width: 100%;
+
+				::-webkit-input-placeholder {
+					padding-left: 10px;
+					font-size: 16px;
+					font-family: 'Avenir';
+					color: #000;
+				}
+
+				.wpcf7-select {
+					background: url(../../assets/arrow-down.png) no-repeat 96%;
+					padding-left: 10px;
+					font-size: 16px;
+					font-family: 'Avenir';
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+					
+				}
+
+
+			}
+		}//.contact-form-wrapepr	
+	}
+
+	.wpcf7-submit {
+		text-transform: uppercase;
+		margin: 25px 0 25px 25px;
+		height: 42.2px;
+		width: 114.5px;
+		font-size: 14px;
+		font-weight: bold;
+		font-family: 'Avenir';
+		outline: none;
+		background: #fbd35d;
+		border-radius: 5px;
+		border: 1px solid #bcac7e;
+		box-shadow: none;
+
+		@include desktop {
+			width: 135px;
+			height: 49px;
+			font-size: 16px;
+
+
+			&:hover {
+				background: #fde18e;
+				box-shadow: none;
+			}
+		}
+
+		@include tablet {
+			width: 135px;
+			height: 49px;
+			font-size: 16px;
+		}
+	}
+  }//#main
+}//.page-template-contact-form
+

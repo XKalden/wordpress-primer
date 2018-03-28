@@ -1,0 +1,350 @@
+.page-template-our-work {
+    
+    
+
+    .header-title {
+      color: #fff;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       
+       @include desktop {
+        padding-left: 55px;
+       }
+
+       @include tablet {
+        padding-left: 55px;
+       }
+      
+
+       & h1 {
+        margin: 0;
+        padding-top: 70px;
+        font-size: 45px;
+       }
+
+       & p {
+        font-size: 20px;
+       }
+
+       @include mobile {
+
+        text-align: center;
+        & h1 {
+          font-size: 36px;
+
+        }
+
+        & p {
+          font-size: 14px;
+        }
+       }
+    }//.header-title
+
+    @include desktop {
+      background: #9ca4ab;
+    }
+
+     @include mobile {
+    	& h1 {
+    		font-size: 22px;
+    		font-family: 'Montserrat';
+    	}
+
+    	& p {
+    		font-size: 13px;
+    		font-family: 'Avenir-Roman';
+    	}
+
+    	& h2 {
+    		font-family: 'Montserrat';
+    		font-size: 22px;
+    	}
+
+    	& span {
+    		font-size: 14px
+    	}
+    }
+
+    @include tablet {
+    	& h1 {
+    		font-size: 30px;
+    		font-family: 'Montserrat';
+    	}
+
+    	& p {
+    		font-size: 15px;
+    		font-family: 'Avenir-Roman';
+    	}
+
+    	& h2 {
+    		font-family: 'Montserrat';
+    		font-size: 30px;
+    	}
+
+    	& span {
+    		font-size: 16px
+    	}
+    }
+    
+    @include desktop {
+    	& h1 {
+    		font-size: 36px;
+    		font-family: 'Montserrat';
+    	}
+
+    	& p {
+    		font-size: 16px;
+    		font-family: 'Avenir-Roman';
+    	}
+
+    	& h2 {
+    		font-family: 'Montserrat';
+    		font-size: 36px;
+    	}
+
+    	& span {
+    		font-size: 21px
+    	}
+    }
+
+   
+
+#main {
+	background: #fff;
+
+	.header-title {
+		height: 235px;
+
+		@include mobile {
+			height: 285px;
+			
+		}
+	}//,header-title
+    @include desktop {
+    width: 1024px;
+    margin: auto;
+    
+
+    .our-work-container:nth-child(even) {
+    	display: flex;
+    	flex-direction: row-reverse;
+    }
+    }// @desktop
+
+    @include tablet {
+    width: 100%;
+    margin: auto;
+    
+
+    .our-work-container:nth-child(even) {
+    	display: flex;
+    	flex-direction: row-reverse;
+    }
+    }// @desktop
+
+.our-work-container {
+	margin-top: 50px;
+
+	@include desktop {
+	width: 907px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+	@include tablet {
+	margin: 30px auto 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+    
+
+    .video {
+
+    	@include mobile {
+
+    		iframe {
+
+    			height: 176.5px;
+    		}
+    	}
+
+    	@include desktop {
+    	width: 453px;
+      height: 300px;
+    	
+    	}
+
+    	@include tablet {
+    	   width: 453px;
+
+    	    iframe {
+    			height: 176.5px;
+    		}
+    	
+    	}
+    }
+	.logo-dscr {
+		@include desktop {
+			margin: 65px auto 0 auto;
+		}
+
+		@include tablet {
+			margin:-15px auto 0 auto;
+		}
+		
+
+		@include mobile {
+			//display: flex;
+			//flex-wrap: wrap;
+		}
+
+		.title-thumbnail {
+          //border: 1px solid red;
+           @include mobile {
+           	  display: flex;
+           	  justify-content: center;
+           	  align-items: center;
+
+           	  & h1 {
+           	  	width: 127px;
+           	  	margin-left: 20px;
+           	  }
+           }
+          
+        	@include desktop {
+   
+    & h1 {
+    	width: 206px;
+    	margin-left: 30px;
+
+    }
+
+    & img {
+    	height: 93px;
+    }
+
+     }//@desktop
+
+     @include tablet {
+   
+    & h1 {
+    	width: 260px;
+    	margin-left: 20px;
+    }
+
+    & img {
+    	height: 93px;
+    }
+
+     }//@tablet
+     }//..title-thumbnail
+
+		& img {
+			margin-left: 40px;
+		}
+
+
+		@include mobile {
+			& p {
+				text-align: center;
+				width: 305px;
+				margin: 10px auto 30px auto;
+			}
+		}
+
+		@include desktop {
+
+		& p {
+			width: 270px;
+			margin: 10px auto 0 auto;
+		}
+		}
+
+		@include tablet {
+
+		& p {
+			width: 270px;
+			margin: 10px 0 0 50px;
+		}
+		}
+      
+		.title-thumbnail {
+
+		   @include desktop {
+     		display: flex;
+			justify-content: center;
+			align-items: center;
+		   }
+
+		   @include tablet {
+     		display: flex;
+			justify-content: center;
+			align-items: center;
+		   }
+
+		}//.title-thumbnail
+	}//.logo-dscr
+}//.our-work-container
+
+.contact-area {
+	background: #c4ddd7;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@include mobile {
+		height: 196px;
+	}
+
+  @include desktop {
+    margin-top: 75px;
+  }
+
+	& span {
+		display: block;
+	}
+
+	& button {
+		        text-transform: uppercase;
+          	margin: 25px 0 25px 0;
+          	height: 42.2px;
+          	width: 114.5px;
+          	font-size: 14px;
+          	font-weight: bold;
+          	font-family: 'Avenir';
+          	outline: none;
+          	background: #fbd35d;
+          	border-radius: 5px;
+          	border: 1px solid #bcac7e;
+          	box-shadow: none;
+
+          	@include desktop {
+          		width: 135px;
+          		height: 49px;
+          		font-size: 16px;
+
+          		&:hover {
+          			background: #fde18e;
+          		}
+          	}
+
+          	@include tablet {
+          		width: 135px;
+          		height: 49px;
+          		font-size: 16px;
+          	}
+	}
+
+}//.contact-area
+
+}//.page-template-our-work
+}//#main
+

@@ -1,0 +1,674 @@
+
+
+// <div class="first_flex">
+// <h3>Got a question? Talk to us!</h3>
+// <p>We'd love to hear from you!</p>
+// <a class="see_more_btn" href="http://localhost:8888/primer/contact/">Contact</a>
+// </div>
+
+footer#colophon{
+    background-color: rgba(37, 50, 47, 1);
+    color:white;
+    width:100%;
+    
+    div.footer_flex{
+
+        display: grid;
+        padding-top: 40px;
+        text-align: center;
+        
+        div.first_flex{
+            grid-row-start: 1;
+            grid-row-end:2;
+            h3{
+                height: 12.5px;
+                font-family: 'avenir-medium';
+                font-size: 18px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                margin-bottom: 0px;
+      
+            }
+            p{
+                margin-top:20px;
+                margin-bottom: 0px;
+                height: 9.5px;
+                font-family: 'avenir-medium';
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+            }
+
+            a{    
+                font-family: 'avenir-medium';
+                font-size: 14px;
+                text-decoration: none;
+                letter-spacing: 1px;
+                color: rgba(51,69,65,1);
+                text-transform: uppercase;
+            }
+
+            a.see_more_btn {
+                display: inline-block;
+                margin-top: 40px;
+                margin-bottom: 0;
+                height:42px;
+                width:118px;
+                padding-top: 10px;
+                background-color: rgba(251,211,93,1);
+                border-radius: 5px;
+                border: 1px solid #bcac7e;
+            }
+    
+        }
+
+        div.info{
+            grid-row-start: 3;
+            grid-row-end:4;
+            margin-top:24px;
+            margin-bottom: 0px;
+            padding-bottom: 20px;
+            
+            p.location{
+                width: 150px;
+                margin-left:auto;
+                margin-right:auto;
+                span.location_img{
+                    display: block;
+                    height: 20px;
+                    width: 20px;
+                    margin-left: 43%;
+                    
+                    background: url('../../assets/images/Footer_Icons/location_Icon@2x.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size:cover;
+                    
+                    margin-right: 40px;
+                    overflow: hidden;
+                    text-indent: 100%;  
+                }
+            }
+            p.tel{
+                span.tel_img{
+                    display: block;
+                    height: 20px;
+                    width: 20px;
+                    margin-left: 48%;
+
+                    background: url('../../assets/images/Footer_Icons/call_Icon2x.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+            
+                    margin-right: 40px;
+                    overflow: hidden;
+                    text-indent: 100%;  
+    
+                }
+            }
+            p{
+                span.email{
+                    display: block;
+                    height: 20px;
+                    width: 20px;
+                    margin-left: 48%;
+            
+                    background: url('../../assets/images/Footer_Icons/mail2x.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;         
+                    margin-right: 40px;
+                    overflow: hidden;
+                    text-indent: 100%;  
+                }
+                a{
+                    text-decoration: none;
+                    color:white;
+                }
+                a:hover{
+                    outline: 0;
+                    border-bottom:none;
+                }
+            }
+    
+        }
+    
+    
+        div.social{
+            grid-row-start: 2;
+            grid-row-end:3;
+            margin-top:24px;
+            margin-bottom: 0px;
+
+            a.fb_page{
+                margin-left:20px;
+                margin-right:20px;
+                background: url('../../assets/images/Footer_Icons/facebook_logo_2x.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height:35px;
+                width: 35px;
+                display: inline-flex;
+                overflow: hidden;
+                text-indent: 100%;  
+            }
+            
+            a.twitter_page{
+                margin-left:20px;
+                margin-right:20px;
+                background: url('../../assets/images/Footer_Icons/twitter_2x.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height:35px;
+                width: 35px;
+    
+                display: inline-flex;
+                overflow: hidden;
+                text-indent: 100%;  
+    
+            }
+            a.insta_page{
+                margin-left:20px;
+                margin-right:20px;
+                background: url('../../assets/images/Footer_Icons/instagram_logo2x.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height:35px;
+                width: 35px;
+    
+                display: inline-flex;
+                overflow: hidden;
+                text-indent: 100%;  
+                   
+            }
+
+            a:hover{
+                outline: 0;
+                border-bottom:none;
+            }
+        }
+    }
+    
+    // Tablet Footer MODE
+
+    @include tablett{
+        padding-left: 5%;
+        padding-right: 5%;
+
+    
+        div.footer_flex{
+            display: grid;
+            padding-top: 42px;
+            padding-bottom: 43px;
+            text-align: center;
+         
+            
+            div.first_flex{
+                grid-column-start: 1;
+                grid-column-end:2;
+                grid-row-start: 1;
+                grid-row-end:2;
+    
+                h3{
+                    height: 12.5px;
+                    font-family: 'avenir-medium';
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    margin-bottom: 0px;
+          
+                }
+                p.first_flex_p{
+                    text-align: center;
+                    margin-top:20px;
+                    margin-bottom: 0px;
+                    
+                    height: 9.5px;
+                    font-family: 'avenir-medium';
+                    font-size: 12px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                }
+    
+                a{    
+                    font-family: 'avenir-medium';
+                    font-size: 12px;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    color: rgba(51,69,65,1);
+                    text-transform: uppercase;
+                }
+    
+                a.see_more_btn {
+                    display: inline-block;
+                    margin-top: 40px;
+                    margin-bottom: 0;
+                    height:42px;
+                    width:118px;
+                    padding-top: 10px;
+                    background-color: rgba(251,211,93,1);
+                    border-radius: 5px;
+                    border: 1px solid #bcac7e;
+                }
+        
+            }
+
+            div.info{
+                grid-column-start: 2;
+                grid-column-end:3;
+                grid-row-start: 1;
+                grid-row-end:2;
+                text-align: left;
+                font-size: 12px;
+                padding-left:18%;
+
+
+                p.location{
+                    margin-bottom: 0px;
+                    font-size: 12px;
+                    width:initial;
+                    margin-left:initial;
+                    margin-right:initial; 
+                    span.location_img{
+                        position: relative;
+                        top: 7px;
+                    
+                
+                        width: 50%;
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                        margin-left: 10px;
+
+                        background: url('../../assets/images/Footer_Icons/location_Icon@2x.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size:cover;
+                        
+                        
+                        margin-right: 10px;
+                        overflow: hidden;
+                        text-indent: 100%;  
+                    }
+                }
+                p.tel{
+                    margin-bottom: 0px;
+                    font-size: 12px;
+                   
+   
+                    width: 100%;
+                    span.tel_img{
+                        position: relative;
+                        top: 7px;
+                    
+                        width:50%;
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                        margin-left: 10px;
+    
+    
+                      
+                        background: url('../../assets/images/Footer_Icons/call_Icon2x.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                
+                        margin-right: 10px;
+                        overflow: hidden;
+                        text-indent: 100%;  
+        
+                    }
+                }
+        
+                p.email_p{    
+                    margin-bottom: 0px;
+
+                    font-size: 12px; 
+                  
+                    width: 100%;
+                    span.email{
+                        position: relative;
+                        top: 7px;
+                    
+                        width:50%;
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                        margin-left: 10px;
+    
+                        background: url('../../assets/images/Footer_Icons/mail2x.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                
+                        margin-right: 10px;
+                        overflow: hidden;
+                        text-indent: 100%;  
+                    }
+                    a{
+                        text-decoration: none;
+                        color:white;
+                    }
+                }
+        
+            }
+        
+        
+            div.social{
+                grid-column-start: 3;
+                grid-column-end:4;
+                grid-row-start: 1;
+                grid-row-end:2;
+                margin-top: 50px;
+    
+                a.fb_page{
+                    margin-left:10px;
+                    margin-right:10px;
+                    background: url('../../assets/images/Footer_Icons/facebook_logo_2x.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    height:35px;
+                    width: 35px;
+                    display: inline-flex;
+                    overflow: hidden;
+                    text-indent: 100%;  
+                }
+                
+                a.twitter_page{
+                    margin-left:10px;
+                    margin-right:10px;
+                    background: url('../../assets/images/Footer_Icons/twitter_2x.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    height:35px;
+                    width: 35px;
+        
+                    display: inline-flex;
+                    overflow: hidden;
+                    text-indent: 100%;  
+        
+                }
+                a.insta_page{
+                    margin-left:10px;
+                    margin-right:10px;
+                    background: url('../../assets/images/Footer_Icons/instagram_logo2x.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    height:35px;
+                    width: 35px;
+        
+                    display: inline-flex;
+                    overflow: hidden;
+                    text-indent: 100%;  
+                       
+                }
+                a:hover{
+                    text-decoration: none;
+
+                }
+            }
+        }
+
+    }
+
+    // Desktop Footer MODE
+
+    @include desktopp{
+
+        width: 1024px;
+        margin: auto;
+
+        padding-left: 5%;
+        padding-right: 5%;
+
+    
+        div.footer_flex{
+            display: grid;
+            padding-top: 42px;
+            padding-bottom: 43px;
+            text-align: center;
+         
+            
+            div.first_flex{
+                grid-column-start: 1;
+                grid-column-end:2;
+                grid-row-start: 1;
+                grid-row-end:2;
+    
+                h3{
+                    height: 12.5px;
+                    font-family: 'avenir-medium';
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    margin-bottom: 0px;
+          
+                }
+                p.first_flex_p{
+                    text-align: center;
+                    margin-top:20px;
+                    margin-bottom: 0px;
+                    
+                    height: 9.5px;
+                    font-family: 'avenir-medium';
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                }
+    
+                a{    
+                    font-family: 'avenir-medium';
+                    font-size: 14px;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    color: rgba(51,69,65,1);
+                    text-transform: uppercase;
+                }
+    
+                a.see_more_btn {
+                    display: inline-block;
+                    margin-top: 40px;
+                    margin-bottom: 0;
+                    height:42px;
+                    width:118px;
+                    padding-top: 10px;
+                    background-color: rgba(251,211,93,1);
+                    border-radius: 5px;
+                    border: 1px solid #bcac7e;
+                }
+        
+            }
+
+            div.info{
+                grid-column-start: 2;
+                grid-column-end:3;
+                grid-row-start: 1;
+                grid-row-end:2;
+                text-align: left;
+                font-size: 12px;
+                padding-left:20%;
+
+
+                p.location{
+                    margin-bottom: 0px;
+                    font-size: 12px;
+                    width:initial;
+                    margin-left:initial;
+                    margin-right:initial; 
+                    span.location_img{
+                        position: relative;
+                        top: 7px;
+                    
+                
+                        width: 50%;
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                        margin-left: 10px;
+
+                        background: url('../../assets/images/Footer_Icons/location_Icon@2x.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size:cover;
+                        
+                        
+                        margin-right: 10px;
+                        overflow: hidden;
+                        text-indent: 100%;  
+                    }
+                }
+                p.tel{
+                    margin-bottom: 0px;
+                    font-size: 12px;
+                   
+   
+                    width: 100%;
+                    span.tel_img{
+                        position: relative;
+                        top: 7px;
+                    
+                        width:50%;
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                        margin-left: 10px;
+    
+    
+                      
+                        background: url('../../assets/images/Footer_Icons/call_Icon2x.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                
+                        margin-right: 10px;
+                        overflow: hidden;
+                        text-indent: 100%;  
+        
+                    }
+                }
+        
+                p.email_p{    
+                    margin-bottom: 0px;
+
+                    font-size: 12px; 
+                  
+                    width: 100%;
+                    span.email{
+                        position: relative;
+                        top: 7px;
+                    
+                        width:50%;
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                        margin-left: 10px;
+    
+                        background: url('../../assets/images/Footer_Icons/mail2x.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                
+                        margin-right: 10px;
+                        overflow: hidden;
+                        text-indent: 100%;  
+                    }
+                    a{
+                        text-decoration: none;
+                        color:white;
+                    }
+                }
+        
+            }
+        
+        
+            div.social{
+                grid-column-start: 3;
+                grid-column-end:4;
+                grid-row-start: 1;
+                grid-row-end:2;
+                margin-top: 50px;
+    
+                a.fb_page{
+                    margin-left:10px;
+                    margin-right:10px;
+                    background: url('../../assets/images/Footer_Icons/facebook_logo_2x.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    height:35px;
+                    width: 35px;
+                    display: inline-flex;
+                    overflow: hidden;
+                    text-indent: 100%;  
+                }
+                
+                a.twitter_page{
+                    margin-left:10px;
+                    margin-right:10px;
+                    background: url('../../assets/images/Footer_Icons/twitter_2x.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    height:35px;
+                    width: 35px;
+        
+                    display: inline-flex;
+                    overflow: hidden;
+                    text-indent: 100%;  
+        
+                }
+                a.insta_page{
+                    margin-left:10px;
+                    margin-right:10px;
+                    background: url('../../assets/images/Footer_Icons/instagram_logo2x.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    height:35px;
+                    width: 35px;
+        
+                    display: inline-flex;
+                    overflow: hidden;
+                    text-indent: 100%;  
+                       
+                }
+                a:hover{
+                    text-decoration: none;
+
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+

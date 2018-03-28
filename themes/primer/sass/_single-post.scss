@@ -1,0 +1,142 @@
+.single-post {
+      	& h1 {
+		text-align: center;
+	}
+
+	.site-main {
+			margin-top: 32px;
+        .entry-header {
+        	& img {
+        		width: 100%;
+        	}
+        }
+			.go-back {
+				
+				& a {
+					text-decoration: none;
+					display: block;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 33px;
+					width: 98px; 
+					border-radius: 5px;
+					border: 1px solid rgba(188, 172, 126, 0.69);
+					background: #fbd35d;
+					color: #000;
+				}
+			}//.go-back
+			
+			.entry-footer {
+				display: none;
+			}
+
+			.nav-previous {
+				display: none;
+			}
+
+			.nav-next {
+				display: none;
+			}
+
+			
+		}//.site-main
+
+	.entry-meta {
+		text-align: center;
+		font-family: 'Avenir';
+
+		.byline {
+			text-transform: capitalize;
+		}
+	}//.entry-meta
+
+	.entry-content {
+		font-family: 'Avenir Roman';
+	}
+
+	@include desktop {
+		background: #9ca4ab;
+
+		.site-main {
+			overflow: hidden;
+			background: #fff;
+			width: 1024px;
+			margin: auto;
+			margin-top: 32px;
+
+			& h1 {
+				font-size: 36px;
+			}
+
+			.entry-meta {
+				font-size: 21px;
+			}
+
+			.go-back {
+				margin: 59px 0 0 49px;
+				& a {
+					width: 98px;
+				
+				&:hover {
+					background: #fde18e;
+				}
+				}
+			}//.go-back
+
+			& p {
+				width: 631px;
+				text-align: left;
+				margin: auto;
+			}
+		}//.site-main
+	}//@desktop
+
+	@include tablet {
+		.go-back {
+			margin: 59px 0 0 49px;
+		}//.go-back
+
+		.entry-content {
+		& p {
+				width: 85vw;
+				text-align: left;
+				margin: auto;
+			}
+			}//.entry-content
+	}//tablet
+
+	@include mobile {
+		
+		.site-main {
+			margin: auto;
+			margin-top: 32px;
+
+			& h1 {
+				font-size: 22px;
+				width: 241px;
+				margin: 20px auto 0 auto;
+			}
+
+			.entry-meta {
+				font-size: 21px;
+				margin-top: 30px;
+			}
+
+			.go-back {
+				margin: 25px 0 0 49px;
+				& a {
+					height: 33px;
+					width: 98px; 
+				}
+			}//.go-back
+
+			
+			& p {
+				width: 273px;
+				text-align: left;
+				margin: auto;
+			}
+		}//.site-main
+	}//@mobile
+}//.single-post

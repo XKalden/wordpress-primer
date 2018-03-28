@@ -1,0 +1,917 @@
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/* Links */
+a {
+	color: $color__link;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+
+	&:active,
+	&:focus,
+	&:hover {
+		color: $color__link-hover;
+	}
+
+	&:focus {
+	}
+
+	&:active,
+	&:hover {
+		outline: 0;
+	}
+}
+/* Menus */
+img.logo-image {
+	margin-left: 5%;
+	margin-top: -1%;
+	width: 63%;
+	max-width: 236px;
+}
+
+img.logo-button {
+	width: 55%;
+}
+
+button.menu-toggle {
+	float: right;
+	margin-top: 2.5%;
+	border: none;
+	background: none;
+	box-shadow: none;
+	position: relative;
+}
+
+ul#primary-menu {
+	font-size: 20px;
+  text-align: center;
+  width: 50%;
+  height: 670px;
+  margin-left: 50%;
+	margin-top: -23%;
+  font-family: Avenir;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: #fff;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 8em;
+}
+
+#primary-menu.menu {
+	display: none;
+}
+
+#primary-menu.menu.menu-active {
+	display: inline-grid;
+}
+
+#menu-item-19 {
+	margin-top: 70%;
+}
+
+#menu-item-20 {
+	margin-top: -52%;
+}
+
+#menu-item-21 {
+	margin-top: -58%;
+}
+
+li#menu-item-21 a{
+	margin-top: -11%;
+	margin-bottom: 2.8%;
+	background-color: #FBD35C;
+	font-weight: 500;
+  border: gray 1px solid;
+	border-radius: 5px;
+  color: #283835;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#menu-item-22 {
+	margin-top: -41%;
+}
+
+#menu-item-23 {
+	margin-top: -28%;
+}
+
+#menu-item-89 {
+		display: inline-grid;
+		text-transform: lowercase;
+		margin-top: -60%;
+	}
+
+	#menu-item-90 {
+		display: inline-grid;
+		text-transform: lowercase;
+		margin-top: -60%;
+	}
+
+.main-navigation {
+	clear: both;
+	float: left;
+	width: 100%;
+	padding-top: 4%;
+	z-index: 9;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 105px;
+	background: white;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: $base__space-unit;
+			left: -999rem;
+			z-index: 99999;
+
+			ul {
+				left: -999rem;
+				top: 0;
+			}
+
+			li {
+				&.focus > ul,
+				&:hover > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			.focus > a,
+			:hover > a {}
+
+			a.focus,
+			a:hover {}
+		}
+
+		li.focus > ul,
+		li:hover > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		float: left;
+		position: relative;
+
+		&.focus > a,
+		&:hover > a {}
+	}
+
+	a {
+		text-decoration: none;
+		color: #283835;
+	}
+
+	a.email {
+		display: inline-block;
+		color: white;
+		margin-top: 0;
+		font-family: Avenir;
+		font-weight: 100;
+		margin-left: 65%;
+	}
+
+	a.phone {
+		display: inline-block;
+		color: white;
+		margin-top: 0;
+		font-family: Avenir;
+		font-weight: 100;
+		margin-left: 4%;
+	}
+
+	a.homepage-link {
+		border: none;
+	}
+
+	.menu-line {
+		background-color: #283835;
+		margin-top: -11.5%;
+		padding: 1%;
+	}
+
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current_page_item > a {
+		font-weight: 900;
+		border-bottom: #FBD35C 1px solid;
+	}
+}
+/* Small menu. */
+.main-navigation.toggled ul,
+.menu-toggle {
+	display: block;
+}
+@media screen and (min-width: 768px) {
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.post-navigation,
+.posts-navigation {
+	.site-main & {
+		margin: 0 0 $base__space-unit;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+	//CSS
+	.menu-line {
+		display: none;
+	}
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+	//CSS
+	img.logo-image {
+		margin-left: 3%;
+    margin-top: -1%;
+    width: 63%;
+    max-width: 285px;
+	}
+
+	img.logo-button {
+		width: 70%;
+	}
+
+	button.menu-toggle {
+		float: right;
+		margin-top: 1%;
+		border: none;
+		background: none;
+		box-shadow: none;
+	}
+
+	ul#primary-menu {
+		font-size: 20px;
+    text-align: center;
+    width: 50%;
+    height: 320px;
+		margin-top: -2%;
+    font-family: Avenir;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #fff;
+	}
+
+	.svg-inline--fa.fa-w-16 {
+	    width: 1em;
+	}
+
+	#menu-item-19 {
+		margin-top: 3%;
+	}
+
+	#menu-item-20 {
+		margin-top: -15%;
+	}
+
+	#menu-item-21 {
+		margin-top: -12%;
+	}
+
+	#menu-item-22 {
+		margin-top: -13%;
+	}
+
+	#menu-item-23 {
+		margin-top: -11%;
+	}
+
+	#menu-item-89 {
+			display: inline-grid;
+			text-transform: lowercase;
+			margin-top: -13%;
+		}
+
+		#menu-item-90 {
+			display: inline-grid;
+			text-transform: lowercase;
+			margin-top: -13%;
+		}
+
+	.main-navigation {
+		clear: both;
+		float: left;
+		width: 100%;
+		padding-top: 2%;
+		z-index: 9;
+		position: fixed;
+		top: 0;
+		height: 105px;
+		background: white;
+
+		a {
+			text-decoration: none;
+			color: black;
+			margin-top: 2%;
+		}
+	}
+
+	.menu-line {
+		display: none;
+	}
+}
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	//CSS
+	img.logo-image {
+		margin-left: 2%;
+    margin-top: -2.3%;
+    width: 63%;
+    max-width: 320px;
+	}
+
+	img.logo-button {
+		width: 70%;
+	}
+
+	button.menu-toggle {
+		float: right;
+		margin-top: 0.5%;
+		border: none;
+		background: none;
+		box-shadow: none;
+	}
+
+	ul#primary-menu {
+		font-size: 20px;
+	  text-align: center;
+	  width: 50%;
+	  height: 575px;
+	  margin-left: 50%;
+	  font-family: Avenir;
+	  font-weight: 500;
+	  text-transform: uppercase;
+	  background: #fff;
+	}
+
+	.svg-inline--fa.fa-w-16 {
+	    width: 1em;
+	}
+
+	#primary-menu.menu.menu-active {
+		display: inline-grid;
+	}
+
+	#primary-menu.menu {
+		display: none;
+	}
+
+	#menu-item-19 {
+	    margin-top: 95%;
+	}
+
+	#menu-item-20 {
+	    margin-top: -45%;
+	}
+
+	#menu-item-21 {
+	    margin-top: -54%;
+	}
+
+	#menu-item-22 {
+	    margin-top: -32%;
+	}
+
+	#menu-item-23 {
+	    margin-top: -18%;
+	}
+
+	#menu-item-89 {
+			display: inline-grid;
+			text-transform: lowercase;
+			margin-top: -50%;
+		}
+
+		#menu-item-90 {
+			display: inline-grid;
+			text-transform: lowercase;
+			margin-top: -50%;
+		}
+
+		#masthead {
+			height: 90px;
+		}
+
+	div.menu-menu-container {
+		width: 100%;
+		float: right;
+	}
+
+	#primary-menu.menu.menu-active {
+		display: inline-grid;
+		height: 1100px;
+	}
+
+	#primary-menu.menu {
+		display: none;
+	}
+
+	.main-navigation {
+		clear: both;
+		float: left;
+		width: 100%;
+		padding-top: 3.5%;
+		z-index: 9;
+		position: fixed;
+		top: 0;
+		height: 120px;
+		background: white;
+
+		.menu-line {
+			display: none;
+		}
+	}
+}
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	//CSS
+	img.logo-image {
+		margin-left: 2%;
+    margin-top: 1%;
+    width: 63%;
+    max-width: 272px;
+	}
+
+	img.logo-button {
+		width: 70%;
+	}
+
+	button.menu-toggle {
+		float: right;
+		margin-top: 1%;
+		border: none;
+		background: none;
+		box-shadow: none;
+	}
+
+	ul#primary-menu {
+		font-size: 20px;
+    text-align: center;
+    width: 50%;
+    height: 273px;
+    font-family: Avenir;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #fff;
+	}
+
+	.svg-inline--fa.fa-w-16 {
+	    width: 1em;
+	}
+
+	#menu-item-19 {
+		margin-top: 10%;
+	}
+
+	#menu-item-20 {
+		margin-top: -19%;
+	}
+
+	#menu-item-21 {
+		margin-top: -20%;
+	}
+
+	#menu-item-22 {
+		margin-top: -16%;
+	}
+
+	#menu-item-23 {
+		margin-top: -12%;
+	}
+
+	#menu-item-89 {
+			display: inline-grid;
+			text-transform: lowercase;
+			margin-top: -13%;
+		}
+
+		#menu-item-90 {
+			display: inline-grid;
+			text-transform: lowercase;
+			margin-top: -13%;
+		}
+
+		#masthead {
+			height: 90px;
+		}
+
+	#primary-menu.menu.menu-active {
+		display: inline-grid;
+		margin-top: -2%;
+		margin-left: 50%;
+		height: 675px;
+	}
+
+	#primary-menu.menu {
+		display: none;
+	}
+
+	div.menu-menu-container {
+		width: 100%;
+		float: right;
+	}
+
+	.main-navigation {
+		clear: both;
+		float: left;
+		width: 100%;
+		padding-top: 10px;
+		z-index: 9;
+		position: fixed;
+		top: 0;
+		height: 120px;
+		background: white;
+
+		a.email {
+			display: inline-block;
+			color: white;
+			margin-top: 0;
+			font-family: Avenir;
+			font-size: 12px;
+			font-weight: 100;
+			margin-left: 65%;
+		}
+
+		a.phone {
+			display: inline-block;
+			color: white;
+			margin-top: 0;
+			font-family: Avenir;
+			font-size: 12px;
+			font-weight: 100;
+			margin-left: 4%;
+		}
+
+		.menu-line {
+			display: none;
+		}
+	}
+}
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+	//CSS
+
+	img.logo-image {
+		margin-left: 2%;
+		margin-top: 1%;
+		width: 63%;
+		max-width: 270px;
+	}
+
+	img.logo-button {
+		width: 70%;
+	}
+
+	button.menu-toggle {
+		display: none;
+	}
+
+	ul#primary-menu {
+		font-size: 16px;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		font-family: Avenir;
+		font-weight: 500;
+		text-transform: uppercase;
+		background: white;
+	}
+
+	.svg-inline--fa.fa-w-16 {
+	    width: 1em;
+	}
+
+	#primary-menu.menu.menu-active {
+		display: -webkit-inline-box;
+		margin-left: 32%;
+	}
+
+	#primary-menu.menu {
+		display: -webkit-inline-box;
+		margin-left: 36%;
+	}
+
+	#menu-item-19 {
+		margin-top: -8%;
+    margin-left: 4%;
+	}
+
+	#menu-item-20 {
+		margin-top: -8%;
+    margin-left: 4%;
+	}
+
+	#menu-item-21 {
+		margin-top: -8%;
+    margin-left: 4%;
+	}
+
+	#menu-item-22 {
+		margin-top: -8%;
+    margin-left: 4%;
+	}
+
+	#menu-item-23 {
+		margin-top: -8%;
+    margin-left: 4%;
+	}
+
+	#menu-item-89 {
+		display: none;
+	}
+
+	#menu-item-90 {
+		display: none;
+	}
+
+	.site-header {
+		width: 1024px;
+    margin: auto;
+    padding-bottom: 53px;
+	}
+
+	#masthead {
+		height: 106px;
+	}
+
+	.main-navigation {
+		width: 1024px;
+		margin: auto;
+		clear: both;
+		float: left;
+		padding-top: 138px;
+		z-index: 9;
+		position: fixed;
+		top: 0;
+		height: 125px;
+		background: white;
+
+		.menu-line {
+			background-color: #283835;
+			margin-top: -13.5%;
+			padding: 0.3%;
+		}
+
+		a.email {
+			display: inline-block;
+			color: white;
+			margin-top: 0;
+			font-family: Avenir;
+			font-size: 12px;
+			font-weight: 100;
+			margin-left: 65%;
+		}
+
+		a.phone {
+			display: inline-block;
+			color: white;
+			margin-top: 0;
+			font-family: Avenir;
+			font-size: 12px;
+			font-weight: 100;
+			margin-left: 4%;
+		}
+	}
+}
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+
+	//CSS
+
+	img.logo-image {
+		margin-left: 2%;
+    margin-top: 1%;
+    width: 63%;
+    max-width: 333px;
+	}
+
+	img.logo-button {
+		width: 70%;
+	}
+
+	button.menu-toggle {
+		display: none;
+	}
+
+	ul#primary-menu {
+		font-size: 16px;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		font-family: Avenir;
+		font-weight: 500;
+		text-transform: uppercase;
+		background: white;
+	}
+
+	.svg-inline--fa.fa-w-16 {
+	    width: 1em;
+	}
+
+	#primary-menu.menu.menu-active {
+		display: -webkit-inline-box;
+		margin-left: 36%;
+	}
+
+	#primary-menu.menu {
+		display: -webkit-inline-box;
+		margin-left: 36%;
+	}
+
+	#menu-item-19 {
+		margin-top: -8%;
+    margin-left: 4%;
+	}
+
+	#menu-item-20 {
+		margin-top: -8%;
+    margin-left: 4%;
+	}
+
+	#menu-item-21 {
+		margin-top: -8%;
+    margin-left: 4%;
+	}
+
+	#menu-item-22 {
+		margin-top: -8%;
+    margin-left: 4%;
+	}
+
+	#menu-item-23 {
+		margin-top: -8%;
+    margin-left: 4%;
+	}
+
+	#menu-item-89 {
+		display: none;
+	}
+
+	#menu-item-90 {
+		display: none;
+	}
+
+	.site-header {
+		width: 1024px;
+    margin: auto;
+    padding-bottom: 70px;
+	}
+
+	#masthead {
+		height: 134px;
+
+	}
+
+	.main-navigation {
+		width: 1024px;
+		margin:auto;
+		clear: both;
+		float: left;
+		padding-top: 138px;
+		z-index: 9;
+		position: fixed;
+		top: 0;
+		height: 166px;
+		background: white;
+
+		.menu-line {
+			background-color: #283835;
+			margin-top: -13.5%;
+			padding: 0.5%;
+		}
+
+		a.email {
+			display: inline-block;
+			color: white;
+			margin-top: 0;
+			font-family: Avenir;
+			font-size: 12px;
+			font-weight: 100;
+			margin-left: 65%;
+		}
+
+		a.phone {
+			display: inline-block;
+			color: white;
+			margin-top: 0;
+			font-family: Avenir;
+			font-size: 12px;
+			font-weight: 100;
+			margin-left: 4%;
+		}
+	}
+}
+
+/*
+  ##Device = iPad Pro Portrait Mode
+  ##Screen = B/w 1024px to 1366px
+*/
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation : portrait){
+	//CSS
+
+	button.menu-toggle {
+    float: right;
+    margin-top: 0%;
+	}
+
+	#primary-menu.menu.menu-active {
+    display: inline-grid;
+    height: 1490px;
+		margin-left: 50%;
+}
+
+.svg-inline--fa.fa-w-16 {
+		width: 1em;
+}
+
+#menu-item-19 {
+    margin-top: 95%;
+}
+
+#menu-item-20 {
+    margin-top: -45%;
+}
+
+#menu-item-21 {
+    margin-top: -54%;
+}
+
+#menu-item-22 {
+    margin-top: -32%;
+}
+
+#menu-item-23 {
+    margin-top: -18%;
+}
+
+#menu-item-89 {
+		display: inline-grid;
+		text-transform: lowercase;
+		margin-top: -50%;
+	}
+
+	#menu-item-90 {
+		display: inline-grid;
+		text-transform: lowercase;
+		margin-top: -50%;
+	}
+
+	#masthead {
+		height: 90px;
+	}
+}
